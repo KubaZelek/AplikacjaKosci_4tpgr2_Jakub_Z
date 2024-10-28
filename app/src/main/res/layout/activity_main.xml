@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5DC"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:visibility="visible">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A52A2A"
+        android:padding="10dp"
+        android:text="Gra w kości. Autor 0000000000"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/rollDiceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#D2691E"
+        android:backgroundTint="#D2691E"
+        android:text="RZUĆ KOŚĆMI"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="9dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/dice1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            android:contentDescription="TODO"
+            android:visibility="visible"
+            app:srcCompat="@drawable/dice_default"
+            tools:src="@drawable/dice_default" />
+
+        <ImageView
+            android:id="@+id/dice2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            app:srcCompat="@drawable/dice_default"
+            tools:src="@drawable/dice_default" />
+
+        <ImageView
+            android:id="@+id/dice3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            app:srcCompat="@drawable/dice_default"
+            tools:src="@drawable/dice_default" />
+
+        <ImageView
+            android:id="@+id/dice4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            app:srcCompat="@drawable/dice_default"
+            tools:src="@drawable/dice_default" />
+
+        <ImageView
+            android:id="@+id/dice5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="9dp"
+            app:srcCompat="@drawable/dice_default"
+            tools:src="@drawable/dice_default" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/currentRollResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Wynik tego losowania: 0"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/gameScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Wynik gry: 0"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#D2691E"
+        android:backgroundTint="#D2691E"
+        android:text="RESETUJ WYNIK"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="50dip" />
+
+</LinearLayout>
